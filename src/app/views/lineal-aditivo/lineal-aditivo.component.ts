@@ -18,7 +18,6 @@ export class LinealAditivoComponent implements OnInit {
     if (form.value['x'] == "" || form.value['m'] < 1) {
       alert("Los datos ingresados no son validos, todos los numeros deben ser mayores a 0")
     } else {
-      console.log(form.value['x'].split(','));
       this.x = form.value['x'].split(',');
       this.x.forEach(item => item.trim());
       let m = parseFloat(form.value['m']);
@@ -37,9 +36,6 @@ export class LinealAditivoComponent implements OnInit {
           keep = false;
         }
       };
-
-      console.log(this.x);
-      console.log(this.r);
     }
   }
 
