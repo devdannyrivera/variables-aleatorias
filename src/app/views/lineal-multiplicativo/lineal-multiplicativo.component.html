@@ -1,0 +1,44 @@
+<div class="container p-3">
+    <h3 class="text-center">Lineal Multiplicativo</h3>
+    <form #form="ngForm"  (ngSubmit)="onSubmit(form)" class="my-4">
+        <div class="form-group row">
+            <label for="x0" class="col-sm-2 col-form-label">X0</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="x0" ngModel >
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="k" class="col-sm-2 col-form-label">k</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="k" ngModel >
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="g" class="col-sm-2 col-form-label">g</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="g" ngModel >
+            </div>
+        </div>       
+        <div class="d-flex flex-row-reverse">
+            <button type="submit" class="btn btn-primary mt-3">Calcular</button>
+        </div>
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">X</th>
+            <th scope="col">R</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let val of x; index as i">
+            <th scope="row">{{i}}</th>
+            <td>{{val}}</td>
+            <td>{{r[i]}}</td>
+          </tr>
+          <tr>
+         </tbody>
+      </table>
+</div>
