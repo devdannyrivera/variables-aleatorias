@@ -12,10 +12,10 @@ const appRoutes = [
     { path: 'cuadrado-medio', component: CuadradoMedioComponent, pathMatch: 'full' },
     { path: 'productos-medios', component: ProductosMediosComponent, pathMatch: 'full' },
     { path: 'multiplicador-constante', component: MultiplicadorConstanteComponent, pathMatch: 'full' },
-    { path: 'lineal-lineal', component: LinealLinealComponent, pathMatch: 'full' },
-    { path: 'lineal-multiplicativo', component: LinealMultiplicativoComponent, pathMatch: 'full' },
-    { path: 'lineal-aditivo', component: LinealAditivoComponent, pathMatch: 'full' },
-    { path: 'lineal-cuadratico', component: LinealCuadraticoComponent, pathMatch: 'full' }
+    { path: 'congruencial-lineal', component: LinealLinealComponent, pathMatch: 'full' },
+    { path: 'congruencial-multiplicativo', component: LinealMultiplicativoComponent, pathMatch: 'full' },
+    { path: 'congruencial-aditivo', component: LinealAditivoComponent, pathMatch: 'full' },
+    { path: 'no-lineal-cuadratico', component: LinealCuadraticoComponent, pathMatch: 'full' }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);
